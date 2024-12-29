@@ -15,14 +15,13 @@
             color: #333;
             line-height: 1.6;
             display: flex;
-            text-align: justify;
-            font-size: 15px;
+            font-size: 18px;
         }
 
         .sidebar {
             background: #6200ea;
             color: #fff;
-            width: 1000px;
+            width: 500px;
             padding: 2rem 1rem;
             display: flex;
             flex-direction: column;
@@ -80,9 +79,9 @@
             border-radius: 5px;
         }
 
-        .sidebar nav ul li a:hover {
+        /* .sidebar nav ul li a:hover {
             background: #1a0080;
-        }
+        } */
 
         main {
             flex-grow: 1;
@@ -102,19 +101,20 @@
         }
 
         section ul {
+            /* display: inline-block; */
             list-style: none;
             padding: 0;
         }
 
         section ul li {
             /* background: #fff; */
-            margin: 0.5rem 0;
-            /* padding: 1rem;
-            border-radius: 5px;
+            margin: 0 2.5rem;
+            padding: 0;
+            /*border-radius: 5px;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
         }
 
-        footer {
+        /* footer {
             text-align: center;
             background: #6200ea;
             color: #fff;
@@ -124,9 +124,9 @@
 
         footer p {
             margin: 0;
-        }
+        } */
 
-        .btn {
+        /* .btn {
             display: inline-block;
             padding: 0.5rem 1rem;
             color: #fff;
@@ -135,11 +135,11 @@
             border-radius: 5px;
             text-decoration: none;
             font-weight: bold;
-        }
+        } */
 
-        .btn:hover {
+        /* .btn:hover {
             background: #3700b3;
-        }
+        } */
     </style>
 </head>
 
@@ -154,7 +154,7 @@
             Assistant Professor<br>
             Aerospace Engineering Department<br>
             IIT Bombay, Powai, Mumbai - 400076<br>
-            Phone: 022 2576 7111<br>
+            Phone: 022-2576-7111<br>
             <!--Email: r.nanavati@aero.iitb.ac.in -->
         </p>
         <nav>
@@ -168,7 +168,6 @@
             </ul>
         </nav>
     </div>
-
     <main>
         <!-- <section id="home">
             <h2>Welcome</h2>
@@ -177,7 +176,7 @@
 
         <section id="about">
             <h2>About Me</h2>
-            <p>Hello! My name is Rohit V. Nanavati. I am an Assistant Professor at the Aerospace Engineering department at IIT Bombay. 
+            <p align="justify">Hello! My name is Rohit V. Nanavati. I am an Assistant Professor at the Aerospace Engineering department at IIT Bombay. 
                 My primary area of expertise is design of intelligent guidance, control and path planning solutions for autonomous vehicles in goal-oriented missions, 
                 with focus in Field Robotics. My current research interests include design and
                 hardware implementation of intelligent path planning algorithms for diverse applications involving autonomous
@@ -192,18 +191,46 @@
         
         <section id="education">
             <h2>Education</h2>
-            <dl>
-                <dt>PhD, Aerospace Engineering, Indian Institute of Technology Bombay</dt>
-                <dd>- Specialization: Dynamics and Control</dd>
-                <dd>- Thesis: Suboptimal Terminal Guidance Strategies for Aerospace Vehicles</dd>
-            </dl>
+                <p><u><i>Doctor of Philosophy</i>, 2021, <strong>Indian Institute of Technology Bombay</strong></u></p>
+                <ul style="list-style-type:square;">
+                    <li><i>Supervisor: </i> Dr. Shashi Ranjan Kumar, and <i>Co-Supervisor: </i> Dr. Arnab Maity</li>
+                    <li><i>Specialization: </i> Aerospace Engineering, Dynamics and Control</li>
+                    <li><i>Thesis: </i> Suboptimal Terminal Guidance Strategies for Aerospace Vehicles</li>
+                </ul>
+                <p><u><i>Bachelor of Technology</i>, 2017, <strong>Indian Institute of Technology Gandhinagar</strong></u></p>
+                <ul style="list-style-type:square;">
+                    <li>Specialization: Mechanical Engineering</li>
+                </ul>
         </section>
 
         <section id="publications">
             <h2>Publications</h2>
-            <ul>
-                <li></li>
-            </ul>
+            <h3>Journals</h3>
+            <ol>
+                <li><strong>R. V. Nanavati</strong>, M. Coombes, C. Liu, "Distributed Multi-Robot Source Term Estimation with Coverage Control and Information theoretic based Coordination", Information Fusion, Volume 111, 2024, 102503</li>
+                <li><strong>R. V. Nanavati</strong>, Y. Meng, M. Coombes, C. Liu. "Generalized data-driven optimal path planning framework for uniform coverage missions using crop spraying UAVs", Precision Agriculture, 24, 1497–1525 (2023)</li>
+                <li>A. Sinha, <strong>R. V. Nanavati</strong>, and S. R. Kumar, "Three-Dimensional Nonlinear Impact Time Guidance Using Predicted Interception Point", Journal of Guidance, Control, and Dynamics, 2023, 46:3, 608-617</li>
+                <li>N. S. Kumar, <strong>R. V. Nanavati</strong>, S. R. Kumar. "Robust nonlinear guidance strategies for survival of cooperating unmanned aerial vehicles against pursuing attackers", Proceedings of the Institution of Mechanical Engineers, Part G: Journal of Aerospace Engineering, 2023; 237(5): 1025-1040</li>
+                <li><strong>R. V. Nanavati</strong>, S. R. Kumar, "Impact angle-based engagement classification and nonlinear guidance against targets with a speed advantage", Aerospace Science and Technology, Volume 129, 2022, 107856</li>
+                <li><strong>R. V. Nanavati</strong>, S. R. Kumar, and A. Maity, "Time-energy suboptimal control of nonlinear input-affine systems", International Journal of Control, 2022, 96:12, 3058-3071</li>
+                <li><strong>R. V. Nanavati</strong>, S. R. Kumar, and A. Maity, "Three-dimensional Suboptimal Nonlinear Intercept Time Guidance against Non-Maneuvering Target", Aerospace Science and Technology, 2021, Vol. 115, Article 106831</li>
+                <li><strong>R. V. Nanavati</strong>, S. R. Kumar, and A. Maity, "Spatial Nonlinear Guidance Strategies for Target Interception at Pre-specified Orientation", Aerospace Science and Technology, 2021, Vol. 114, Article 106735</li>
+                <li><strong>R. V. Nanavati</strong>, S. R. Kumar and A. Maity, "Cooperative Target Capture Using Relative Separation for Three-Dimensional Engagement", in IEEE Transactions on Aerospace and Electronic Systems, 2021, vol. 57, no. 5, pp. 3357-3367</li>
+                <li><strong>R. V. Nanavati</strong>, S. R. Kumar, and A. Maity, "Lead-Angle-Based Three-Dimensional Guidance for Angle-Constrained Interception", Journal of Guidance, Control and Dynamics, 2021, Vol. 44, No. 1, pp. 190-199</li>
+                <li><strong>R. V. Nanavati</strong>, S. R. Kumar, and A. Maity, "Suboptimal closed-form feedback control of input-affine non-linear systems", IET Control Theory & Applications, 2020, Vol. 14, No. 15, pp. 2064-2075</li>
+                <li><strong>R. V. Nanavati</strong>, S. R. Kumar, and A. Maity "Nonlinear Simultaneous Interception Guidance Strategies for Stationary Targets", Journal of Guidance, Control and Dynamics, 2020, Vol. 43, No. 1, pp. 154-161</li>
+            </ol>
+            <h3>Conference</h3>
+            <ol>
+                <li>T. J. Glover, <strong>R. V. Nanavati</strong>, C. Rhodes, M. Coombes, C. Liu, W. H. Chen, N. Perree and S. Hiscocks, " A Monte Carlo Tree Search Framework for Autonomous Source Term Estimation in Stone Soup", IEEE 27th International conference of Information Fusion 2024, Venice, Italy. Accepted</li>
+                <li><strong>R. V. Nanavati</strong>, C. Rhodes, M. Coombes, C. Liu, “Low-to-High Resolution Path Planner for Robotic Gas Distribution Mapping”, IEEE International Conference on Robotics and Automation, ICRA 2024, PACIFICO Yokohama, In-Press</li>
+                <li>A. Sinha, <strong>R. V. Nanavati</strong> and S. R. Kumar, "Impact Angle Constrained Integrated Guidance and Control for a Dual-controlled Interceptor," 2021 Seventh Indian Control Conference (ICC), Mumbai, India, 2021, pp. 27-32</li>
+                <li><strong>R. V. Nanavati</strong>, S. R. Kumar and A. Maity, "Time-Constrained Individual Homing Guidance against Stationary Targets," 2021 Seventh Indian Control Conference (ICC), Mumbai, India, 2021, pp. 377-382.</li>
+                <li><strong>R. V. Nanavati</strong>, S. R. Kumar, and A. Maity “Lead Angle based Three-Dimensional Guidance for Angle Constrained Interception”, AIAA SciTech 2021 Forum - Missile and Trans-Atmospheric Vehicle GNC, AIAA-1461, January.</li>
+                <li><strong>R. V. Nanavati</strong>, S. R. Kumar, and A. Maity “Range-Error based Three-Dimensional Salvo Guidance against Stationary Targets”, AIAA SciTech 2021 Forum - Missile and Trans-Atmospheric Vehicle GNC, AIAA-1461, January.</li>
+                <li><strong>R. V. Nanavati</strong>, S. R. Kumar, and A. Maity “Three-Dimensional Finite-time Suboptimal Nonlinear Impact Angle Guidance”, 6th Conference on Advances in Control and Optimization of Dynamical Systems ACODS 2020, IFACPapersOnLine, Volume 53, Issue 1, 2020, pp. 252-257</li>
+                <li><strong>R. V. Nanavati</strong>, S. R. Kumar, and A. Maity “Simultaneous Interception Guidance Strategy in Nonlinear Framework”, IEEE 27th Mediterranean Conference on Control and Automation, Akko, Israel, 2019, pp. 118-123</li>
+            </ol>
         </section>
 
         <!-- <section id="projects">
