@@ -21,19 +21,20 @@
         .sidebar {
             background: #6200ea;
             color: #fff;
-            width: 500px;
+            width: 300px;
             padding: 2rem 1rem;
             display: flex;
             flex-direction: column;
             align-items: center;
             box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
             min-height: 100vh;
+            position: fixed;
         }
 
         .profile-photo {
             flex-shrink: 0;
-            width: 150px;
-            height: 150px;
+            width: 200px;
+            height: 200px;
             border-radius: 50%;
             background-color: #ddd;
             margin-bottom: 1.5rem;
@@ -72,11 +73,11 @@
             color: #fff;
             text-decoration: none;
             font-weight: bold;
-            display: block;
-            text-align: center;
+            /* display: block; */
+            text-align: left;
             padding: 0.5rem;
             background: #3700b3;
-            border-radius: 5px;
+            /* border-radius: 5px; */
         }
 
         /* .sidebar nav ul li a:hover {
@@ -86,8 +87,8 @@
         main {
             flex-grow: 1;
             padding: 2rem;
-            max-width: 1000px;
-            margin: 0 auto;
+            max-width: 1100px;
+            margin-left: 350px;
         }
 
         section {
@@ -153,18 +154,21 @@
         <p>
             Assistant Professor<br>
             Aerospace Engineering Department<br>
-            IIT Bombay, Powai, Mumbai - 400076<br>
-            Phone: 022-2576-7111<br>
-            <!--Email: r.nanavati@aero.iitb.ac.in -->
+            IIT Bombay, Powai,<br> Mumbai - 400076
+        </p>
+        <p>
+            <strong>Phone:</strong> 022-2576-7111<br>
+            <strong>Email:</strong> r.nanavati@aero.iitb.ac.in<br>
         </p>
         <nav>
             <ul>
                 <!-- <li><a href="#home">Home</a></li> -->
                 <li><a href="#about">About</a></li>
                 <li><a href="#education">Education</a></li>
+                <li><a href="#appointments">Appointments</a></li>
                 <li><a href="#publications">Publications</a></li>
                 <!-- <li><a href="#projects">Projects</a></li> -->
-                <li><a href="#contact">Contact</a></li>
+                <!-- <li><a href="#contact">Contact</a></li> -->
             </ul>
         </nav>
     </div>
@@ -186,7 +190,7 @@
                 I also interested in applications of Monte Carlo Tree Search based path planning techniques, applications of autonomous
                 aerial robotics in precision agriculture applications like pesticide spraying and crop surveying, intelligent
                 decision-making algorithms for manufacturing robots.</p>
-            <p>Feel free to explore my work and reach out if you have any questions.</p>
+            <!-- <p>Feel free to explore my work and reach out if you have any questions.</p> -->
         </section>
         
         <section id="education">
@@ -200,6 +204,14 @@
                 <p><u><i>Bachelor of Technology</i>, 2017, <strong>Indian Institute of Technology Gandhinagar</strong></u></p>
                 <ul style="list-style-type:square;">
                     <li>Specialization: Mechanical Engineering</li>
+                </ul>
+        </section>
+        <section id="appointments">
+            <h2>Appointments</h2>
+                <ul style="list-style-type:square;">
+                    <li><strong>Assistant Professor</strong>, December 2024 - Present, <i>Department of Aerospace Engineering, Indian Institute of Technology Bombay</i></li>
+                    <li><strong>Research Associate</strong>, December 2021 - Decemeber 2024, <i>Loughborough Center of Autonomous Systems, Department of Aeronautical and Autonomotive Engineering, Loughborough University,</i> England, UK.</li>
+                    <li><strong>Teaching Assistant</strong>, January 2018 - October 2021, <i>Department of Aerospace Engineering, Indian Institute of Technology Bombay</i></li>
                 </ul>
         </section>
 
@@ -247,7 +259,7 @@
             Email: r.nanavati@aero.iitb.ac.in
         </section> -->
 
-        <section id="contact">
+        <!-- <section id="contact">
             <h2>Contact</h2>
             <p>You can reach me via email at <a href="mailto:r.nanavati@aero.iitb.ac.in">r.nanavati@aero.iitb.ac.in</a></p>
             <p>Follow me on:</p>
@@ -256,7 +268,7 @@
                 <li><a href="https://scholar.google.com/citations?user=yourid">Google Scholar</a></li>
                 <li><a href="https://linkedin.com/in/yourusername">LinkedIn</a></li>
             </ul>
-        </section>
+        </section> -->
     </main>
 </body>
 
