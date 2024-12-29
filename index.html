@@ -4,60 +4,225 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dr. Rohit V. Nanavati</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/minima/3.0.0/style.css">
+    <title>Rohit V. Nanavati</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+            line-height: 1.6;
+            display: flex;
+            text-align: justify;
+            font-size: 15px;
+        }
+
+        .sidebar {
+            background: #6200ea;
+            color: #fff;
+            width: 1000px;
+            padding: 2rem 1rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+            min-height: 100vh;
+        }
+
+        .profile-photo {
+            flex-shrink: 0;
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background-color: #ddd;
+            margin-bottom: 1.5rem;
+            overflow: hidden;
+        }
+
+        .profile-photo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .sidebar h1 {
+            margin: 0;
+            font-size: 1.5rem;
+            text-align: center;
+        }
+
+        .sidebar p {
+            text-align: center;
+            margin: 0.5rem 0 2rem;
+            font-size: 1rem;
+        }
+
+        .sidebar nav ul {
+            list-style: none;
+            padding: 0;
+            width: 100%;
+        }
+
+        .sidebar nav ul li {
+            margin: 1rem 0;
+        }
+
+        .sidebar nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            display: block;
+            text-align: center;
+            padding: 0.5rem;
+            background: #3700b3;
+            border-radius: 5px;
+        }
+
+        .sidebar nav ul li a:hover {
+            background: #1a0080;
+        }
+
+        main {
+            flex-grow: 1;
+            padding: 2rem;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        section {
+            margin-bottom: 2rem;
+        }
+
+        section h2 {
+            color: #6200ea;
+            border-bottom: 2px solid #6200ea;
+            padding-bottom: 0.5rem;
+        }
+
+        section ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        section ul li {
+            /* background: #fff; */
+            margin: 0.5rem 0;
+            /* padding: 1rem;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+        }
+
+        footer {
+            text-align: center;
+            background: #6200ea;
+            color: #fff;
+            padding: 1rem 0;
+            margin-top: 2rem;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            color: #fff;
+            background: #6200ea;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .btn:hover {
+            background: #3700b3;
+        }
+    </style>
 </head>
 
 <body>
-    <header>
+    <div class="sidebar">
+        <div class="profile-photo">
+            <!-- Add your photo here -->
+            <img src="IITB_AeroProfilePicture_RVN.jpg" alt="Rohit V. Nanavati">
+        </div>
         <h1>Dr. Rohit V. Nanavati</h1>
-        <p>Academic Profile of Dr. Rohit V. Nanavati</p>
+        <p>
+            Assistant Professor<br>
+            Aerospace Engineering Department<br>
+            IIT Bombay, Powai, Mumbai - 400076<br>
+            Phone: 022 2576 7111<br>
+            <!--Email: r.nanavati@aero.iitb.ac.in -->
+        </p>
         <nav>
             <ul>
-                <li><a href="#home">Home</a></li>
+                <!-- <li><a href="#home">Home</a></li> -->
                 <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
                 <li><a href="#publications">Publications</a></li>
-                <li><a href="#projects">Projects</a></li>
+                <!-- <li><a href="#projects">Projects</a></li> -->
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
-    </header>
+    </div>
 
     <main>
-        <section id="home">
+        <!-- <section id="home">
             <h2>Welcome</h2>
             <p>Hello! Welcome to my academic profile. Please explore to learn more about my work and interests.</p>
-        </section>
+        </section> -->
 
         <section id="about">
             <h2>About Me</h2>
-            <p>Hello! My name is <strong>Your Name</strong>. I am a <strong>Your Title</strong> at <strong>Your Institution</strong>. My research focuses on <strong>Your Research Interests</strong>.</p>
+            <p>Hello! My name is Rohit V. Nanavati. I am an Assistant Professor at the Aerospace Engineering department at IIT Bombay. 
+                My primary area of expertise is design of intelligent guidance, control and path planning solutions for autonomous vehicles in goal-oriented missions, 
+                with focus in Field Robotics. My current research interests include design and
+                hardware implementation of intelligent path planning algorithms for diverse applications involving autonomous
+                ground or aerial robots. I am currently investigating the design and deployment of cooperative path planning
+                algorithms aimed for autonomous multi-robot systems deployed to achieve gas distribution mapping of an area
+                of interest or source term localization useful in Chemical, Biological, Radioactive, and Nuclear disaster response.
+                I also interested in applications of Monte Carlo Tree Search based path planning techniques, applications of autonomous
+                aerial robotics in precision agriculture applications like pesticide spraying and crop surveying, intelligent
+                decision-making algorithms for manufacturing robots.</p>
             <p>Feel free to explore my work and reach out if you have any questions.</p>
+        </section>
+        
+        <section id="education">
+            <h2>Education</h2>
+            <dl>
+                <dt>PhD, Aerospace Engineering, Indian Institute of Technology Bombay</dt>
+                <dd>- Specialization: Dynamics and Control</dd>
+                <dd>- Thesis: Suboptimal Terminal Guidance Strategies for Aerospace Vehicles</dd>
+            </dl>
         </section>
 
         <section id="publications">
             <h2>Publications</h2>
             <ul>
-                <li><strong>Your Name</strong>, Co-author(s). "Title of the Paper." <em>Journal Name</em>, vol. X, no. Y, Year. <a href="#">DOI/Link</a></li>
-                <li><strong>Your Name</strong>, Co-author(s). "Another Paper Title." <em>Conference Name</em>, Year. <a href="#">DOI/Link</a></li>
+                <li></li>
             </ul>
         </section>
 
-        <section id="projects">
+        <!-- <section id="projects">
             <h2>Projects</h2>
             <article>
                 <h3>Project Title 1</h3>
-                <p>Description of the project. <a href="#">Link</a></p>
+                <p>Description of the project. <a class="btn" href="#">Link</a></p>
             </article>
             <article>
                 <h3>Project Title 2</h3>
-                <p>Description of the project. <a href="#">Link</a></p>
+                <p>Description of the project. <a class="btn" href="#">Link</a></p>
             </article>
-        </section>
+            Phone: 022 2576 7111<br>
+            Email: r.nanavati@aero.iitb.ac.in
+        </section> -->
 
         <section id="contact">
             <h2>Contact</h2>
-            <p>You can reach me via email at <a href="mailto:your.email@example.com">your.email@example.com</a>.</p>
+            <p>You can reach me via email at <a href="mailto:r.nanavati@aero.iitb.ac.in">r.nanavati@aero.iitb.ac.in</a></p>
             <p>Follow me on:</p>
             <ul>
                 <li><a href="https://github.com/yourusername">GitHub</a></li>
@@ -66,10 +231,6 @@
             </ul>
         </section>
     </main>
-
-    <footer>
-        <p>&copy; 2024 Rohit V. Nanavati. All rights reserved.</p>
-    </footer>
 </body>
 
 </html>
