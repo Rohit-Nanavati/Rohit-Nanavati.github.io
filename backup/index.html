@@ -14,22 +14,22 @@
             background-color: #f4f4f9;
             color: #333;
             line-height: 1.6;
+            display: flex;
+            font-size: 18px;
         }
 
-        header {
+        .sidebar {
             background: #6200ea;
             color: #fff;
-            padding: 1rem;
+            width: auto;
+            height: auto;
+            padding: 2rem 1rem;
             display: flex;
+            flex-direction: column;
             align-items: center;
-            width: 100%;
-        }
-
-        .header-content {
-            display: flex;
-            align-items: center;
-            max-width: 1200px;
-            margin: 0 auto;
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+            min-height: 100vh;
+            /* position: fixed; */
         }
 
         .profile-photo {
@@ -49,49 +49,48 @@
             object-fit: cover;
         }
 
-        .header-text {
-            flex-grow: 1;
-        }
-
-        .header-text h1 {
-            margin-left: 10%;
+        .sidebar h1 {
+            margin: 0;
             font-size: 1.5rem;
+            text-align: center;
         }
 
-        .header-text p {
+        .sidebar p {
+            text-align: center;
+            margin: 0.5rem 0 2rem;
             font-size: 1rem;
-            margin-left: 10%;
-            margin-top: 1rem;
+        }
+
+        .sidebar nav ul {
+            list-style: none;
+            padding: 0;
             width: 100%;
         }
 
-        nav ul {
-            list-style: none;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            margin: 1rem 0 0;
+        .sidebar nav ul li {
+            margin: 1rem 0;
         }
 
-        nav ul li {
-            margin: 0 1rem;
-        }
-
-        nav ul li a {
-            color: #6200ea;
+        .sidebar nav ul li a {
+            color: #fff;
             text-decoration: none;
             font-weight: bold;
+            /* display: block; */
+            text-align: left;
+            padding: 0.5rem;
+            background: #3700b3;
+            /* border-radius: 5px; */
         }
 
-        nav ul li a:hover {
-            text-decoration: underline;
-        }
+        /* .sidebar nav ul li a:hover {
+            background: #1a0080;
+        } */
 
         main {
-            max-width: 800px;
-            margin: 2rem auto;
-            padding: 0 1rem;
-            /* margin-top: 20%; */
+            flex-grow: 1;
+            padding: 2rem;
+            max-width: 1100px;
+            margin-left: 30px;
         }
 
         section {
@@ -114,11 +113,11 @@
             /* background: #fff; */
             margin: 0 2.5rem;
             padding: 2px;
-            /* border-radius: 5px; */
-            /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+            /*border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
         }
 
-        footer {
+        /* footer {
             text-align: center;
             background: #6200ea;
             color: #fff;
@@ -128,9 +127,9 @@
 
         footer p {
             margin: 0;
-        }
+        } */
 
-        .btn {
+        /* .btn {
             display: inline-block;
             padding: 0.5rem 1rem;
             color: #fff;
@@ -139,43 +138,42 @@
             border-radius: 5px;
             text-decoration: none;
             font-weight: bold;
-        }
+        } */
 
-        .btn:hover {
+        /* .btn:hover {
             background: #3700b3;
-        }
+        } */
     </style>
 </head>
 
 <body>
-    <header>
-        <div class="header-content">
-            <div class="profile-photo">
-                <!-- Add your photo here -->
-                <img src="IITB_AeroProfilePicture_RVN.jpg" alt="Rohit V. Nanavati">
-            </div>
-            <div class="header-text">
-                <h1>Dr. Rohit V. Nanavati</h1>
-                <p>
-                    Assistant Professor,<br>
-                    Aerospace Engineering Department,
-                    IIT Bombay, Powai,<br> Mumbai - 400076
-                </p>
-                <p>
-                    <strong>Phone:</strong> 022-2576-7111,
-                    <strong>Email:</strong> r.nanavati@aero.iitb.ac.in<br>
-                </p>
-            </div>
+    <div class="sidebar">
+        <div class="profile-photo">
+            <!-- Add your photo here -->
+            <img src="IITB_AeroProfilePicture_RVN.jpg" alt="Rohit V. Nanavati">
         </div>
-    </header>
-    <nav>
-        <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#education">Education</a></li>
-          <li><a href="#appointments">Appointments</a></li>
-          <li><a href="#publications">Publications</a></li>
-        </ul>
-    </nav>
+        <h1>Dr. Rohit V. Nanavati</h1>
+        <p>
+            Assistant Professor<br>
+            Aerospace Engineering Department<br>
+            IIT Bombay, Powai,<br> Mumbai - 400076
+        </p>
+        <p>
+            <strong>Phone:</strong> 022-2576-7111<br>
+            <strong>Email:</strong> r.nanavati@aero.iitb.ac.in<br>
+        </p>
+        <nav>
+            <ul>
+                <!-- <li><a href="#home">Home</a></li> -->
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#appointments">Appointments</a></li>
+                <li><a href="#publications">Publications</a></li>
+                <!-- <li><a href="#projects">Projects</a></li> -->
+                <!-- <li><a href="#contact">Contact</a></li> -->
+            </ul>
+        </nav>
+    </div>
     <main>
         <!-- <section id="home">
             <h2>Welcome</h2>
@@ -183,7 +181,7 @@
         </section> -->
 
         <section id="about">
-            <h2>About</h2>
+            <h2>About Me</h2>
             <p align="justify">Hello! My name is Rohit V. Nanavati. I am an Assistant Professor at the Aerospace Engineering department at IIT Bombay. 
                 My primary area of expertise is design of intelligent guidance, control and path planning solutions for autonomous vehicles in goal-oriented missions, 
                 with focus in Field Robotics. My current research interests include design and
@@ -274,10 +272,6 @@
             </ul>
         </section> -->
     </main>
-
-    <footer>
-        <p>&copy; 2024 Rohit V. Nanavati. All rights reserved.</p>
-    </footer>
 </body>
 
 </html>
