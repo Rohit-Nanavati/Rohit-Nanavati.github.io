@@ -26,8 +26,8 @@
 
         .profile-photo {
             flex-shrink: 0;
-            width: 200px;
-            height: 200px;
+            max-width: 200px;
+            max-height: 200px;
             border-radius: 50%;
             background-color: #ddd;
             margin-bottom: 1.5rem;
@@ -81,7 +81,7 @@
         }
 
         main {
-            max-width: 800px;
+            max-width: 80%;
             margin: 2rem auto;
             padding: 0 1rem;
             /* margin-top: 20%; */
