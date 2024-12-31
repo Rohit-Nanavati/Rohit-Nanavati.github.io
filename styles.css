@@ -26,8 +26,8 @@
 
         .profile-photo {
             flex-shrink: 0;
-            max-width: 200px;
-            max-height: 200px;
+            width: 200px;
+            height: 200px;
             border-radius: 50%;
             background-color: #ddd;
             margin-bottom: 1.5rem;
